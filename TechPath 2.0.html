@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMIX</title>
+  <!-- Add this in <head> -->
+  <link rel="stylesheet" href="techpath.css">
+  <!-- Add this before </body> -->
+  <script src="techpath.js"></script>
+</head>
+<body>
+  <header>
+    <span class="logo">LUMIX</span>
+    <nav aria-label="Main navigation" class="main-nav">
+      <a href="#">Home</a>
+      <a href="#">Drives</a>
+      <a href="#">AI Tools</a>
+      <a href="#">GitHub</a>
+      <a href="#">Community</a>
+      <a href="#">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open navigation" id="nav-toggle" onclick="toggleNav();">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay" onclick="if(event.target === this) toggleNav();">
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <button class="mobile-nav-close" aria-label="Close navigation" onclick="toggleNav();">×</button>
+        <a href="#">Home</a>
+        <a href="#">Drives</a>
+        <a href="#">AI Tools</a>
+        <a href="#">GitHub</a>
+        <a href="#">Community</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero section-animate visible">
+      <div class="hero-bg-video">
+        <video autoplay loop muted playsinline preload="auto" class="hero-video" id="hero-video">
+          <source src="back5.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="hero-bg-image" id="hero-bg-image"></div>
+      </div>
+      <div class="hero-bg-anim">
+        <div class="hero-orb hero-orb1"></div>
+        <div class="hero-orb hero-orb2"></div>
+        <div class="hero-orb hero-orb3"></div>
+      </div>
+      <div class="hero-grid-bg"></div>
+      <div class="hero-particles">
+        <div class="hero-particle" style="left:12vw;top:22vh;animation-delay:0s;"></div>
+        <div class="hero-particle" style="left:60vw;top:18vh;animation-delay:2s;"></div>
+        <div class="hero-particle" style="left:30vw;top:60vh;animation-delay:1.5s;"></div>
+        <div class="hero-particle" style="left:80vw;top:40vh;animation-delay:3s;"></div>
+        <div class="hero-particle" style="left:50vw;top:80vh;animation-delay:4s;"></div>
+      </div>
+    <span class="emoji-deco bolt">⚡</span>
+    <span class="emoji-deco rocket">🚀</span>
+    <span class="emoji-deco target">🎯</span>
+      <div class="hero-title" id="hero-title">
+        <span id="line1"></span><br>
+        <span id="line2"></span><span id="tp-highlight" class="highlight"></span><span id="big2" class="big2"></span>
+        <span class="hero-intro">TechPath is now redesigned as</span>
+        <span class="hero-typed big2" id="hero-typed-techpath">LUMIX</span>
+    </div>
+    <div class="hero-desc">
+        Your gateway to placement drives, cutting-edge AI tools,<br> and seamless GitHub integration
+    </div>
+    <div class="hero-btns">
+      <button class="btn">Explore Drives</button>
+      <button class="btn">AI Tools Hub</button>
+    </div>
+    <div class="scroll-down">
+      <svg viewBox="0 0 32 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.5" y="1.5" width="29" height="45" rx="14.5" stroke="currentColor" stroke-width="3"></rect>
+          <circle cx="16" cy="36" r="3" fill="currentColor"></circle>
+      </svg>
+    </div>
+  </section>
+    <section class="drives-section pro-section section-animate">
+      <div class="pro-section-header scroll-section">
+        <h2 class="pro-section-title">Placement Drives</h2>
+        <div class="pro-section-underline"></div>
+        <div class="pro-section-sub">Explore the hottest opportunities from top companies. <span class="pro-section-cta">Get noticed. Get hired.</span></div>
+      </div>
+      <div class="pro-cards-row pro-cards-staggered">
+      <!-- Google Card -->
+        <div class="pro-card-outer"><div class="pro-card glass-card pro-card-tilt1 scroll-section">
+          <div class="pro-card-accent"></div>
+          <div class="pro-card-badge hot pro-card-badge-anim">Hot</div>
+          <div class="pro-card-icon">🔍</div>
+          <div class="pro-card-title">Google</div>
+          <div class="pro-card-desc">On-Campus Drive<br><span class="pro-card-highlight">SDE, Internships, Global Impact</span></div>
+          <button class="pro-card-btn">Preview</button>
+          <div class="pro-card-hover-burst">🎉</div>
+        </div></div>
+      <!-- Microsoft Card -->
+        <div class="pro-card-outer"><div class="pro-card glass-card pro-card-tilt2 scroll-section">
+          <div class="pro-card-accent"></div>
+          <div class="pro-card-badge new pro-card-badge-anim">New</div>
+          <div class="pro-card-icon">🪟</div>
+          <div class="pro-card-title">Microsoft</div>
+          <div class="pro-card-desc">Cloud, AI, Product Teams<br><span class="pro-card-highlight">Mentorship, Hackathons</span></div>
+          <button class="pro-card-btn">Preview</button>
+          <div class="pro-card-hover-burst">🚀</div>
+        </div></div>
+      <!-- Amazon Card -->
+        <div class="pro-card-outer"><div class="pro-card glass-card pro-card-tilt1 scroll-section">
+          <div class="pro-card-accent"></div>
+          <div class="pro-card-badge hot pro-card-badge-anim">Hot</div>
+          <div class="pro-card-icon">📦</div>
+          <div class="pro-card-title">Amazon</div>
+          <div class="pro-card-desc">Off-Campus Drive<br><span class="pro-card-highlight">SDE, Cloud, Leadership</span></div>
+          <button class="pro-card-btn">Preview</button>
+          <div class="pro-card-hover-burst">📈</div>
+        </div></div>
+      <!-- Netflix Card -->
+        <div class="pro-card-outer"><div class="pro-card glass-card pro-card-tilt2 scroll-section">
+          <div class="pro-card-accent"></div>
+          <div class="pro-card-badge new pro-card-badge-anim">New</div>
+          <div class="pro-card-icon">🎬</div>
+          <div class="pro-card-title">Netflix</div>
+          <div class="pro-card-desc">Off-Campus Drive<br><span class="pro-card-highlight">Media, Backend, Innovation</span></div>
+          <button class="pro-card-btn">Preview</button>
+          <div class="pro-card-hover-burst">🍿</div>
+        </div></div>
+        <!-- See All Card -->
+        <div class="pro-card-outer"><div class="pro-card glass-card pro-card-seeall scroll-section">
+          <div class="pro-card-accent"></div>
+          <div class="pro-card-icon seeall">✨</div>
+          <div class="pro-card-title">See All Drives</div>
+          <div class="pro-card-desc">Unlock more opportunities<br>and hidden gems!</div>
+          <button class="pro-card-btn seeall">Explore All <span style="font-size:1.2em;">→</span></button>
+          <div class="pro-card-hover-burst">🔓</div>
+        </div></div>
+        <!-- Explore More Card -->
+        <div class="pro-card-outer"><div class="pro-card glass-card pro-card-seeall scroll-section">
+          <div class="pro-card-accent"></div>
+          <div class="pro-card-icon seeall">🔎</div>
+          <div class="pro-card-title">Explore More</div>
+          <div class="pro-card-desc">Find more placement drives<br>and opportunities!</div>
+          <button class="pro-card-btn seeall">View All Drives</button>
+          <div class="pro-card-hover-burst">🌟</div>
+        </div></div>
+    </div>
+  </section>
+
+    <section class="ai-tools-section pro-section section-animate">
+      <div class="pro-section-header scroll-section">
+        <h2 class="pro-section-title">AI Tools</h2>
+        <div class="pro-section-underline"></div>
+        <div class="pro-section-sub">Supercharge your workflow with the latest AI. <span class="pro-section-cta">Unlock your potential.</span></div>
+      </div>
+      <div class="pro-cards-row pro-cards-staggered">
+      <!-- ChatGPT Card -->
+        <div class="pro-card-outer"><div class="pro-card glass-card pro-card-tilt1 scroll-section">
+          <div class="pro-card-accent"></div>
+          <div class="pro-card-badge top pro-card-badge-anim">Top Pick</div>
+          <div class="pro-card-icon">🤖</div>
+          <div class="pro-card-title">ChatGPT</div>
+          <div class="pro-card-desc">Chat, code, brainstorm<br><span class="pro-card-highlight">24/7 instant answers</span></div>
+          <button class="pro-card-btn">Preview</button>
+          <div class="pro-card-hover-burst">💡</div>
+        </div></div>
+        <!-- Copilot Card -->
+        <div class="pro-card-outer"><div class="pro-card glass-card pro-card-tilt2 scroll-section">
+          <div class="pro-card-accent"></div>
+          <div class="pro-card-badge new pro-card-badge-anim">New</div>
+          <div class="pro-card-icon">👨‍💻</div>
+          <div class="pro-card-title">GitHub Copilot</div>
+          <div class="pro-card-desc">AI pair programmer<br><span class="pro-card-highlight">Code as you type</span></div>
+          <button class="pro-card-btn">Preview</button>
+          <div class="pro-card-hover-burst">⚡</div>
+        </div></div>
+      <!-- Midjourney Card -->
+        <div class="pro-card-outer"><div class="pro-card glass-card pro-card-tilt1 scroll-section">
+          <div class="pro-card-accent"></div>
+          <div class="pro-card-badge top pro-card-badge-anim">Top Pick</div>
+          <div class="pro-card-icon">🎨</div>
+          <div class="pro-card-title">Midjourney</div>
+          <div class="pro-card-desc">AI image generation<br><span class="pro-card-highlight">Creative visuals, fast</span></div>
+          <button class="pro-card-btn">Preview</button>
+          <div class="pro-card-hover-burst">🖼️</div>
+        </div></div>
+      <!-- Perplexity Card -->
+        <div class="pro-card-outer"><div class="pro-card glass-card pro-card-tilt2 scroll-section">
+          <div class="pro-card-accent"></div>
+          <div class="pro-card-badge new pro-card-badge-anim">New</div>
+          <div class="pro-card-icon">🔍</div>
+          <div class="pro-card-title">Perplexity</div>
+          <div class="pro-card-desc">AI search engine<br><span class="pro-card-highlight">Instant answers, research</span></div>
+          <button class="pro-card-btn">Preview</button>
+          <div class="pro-card-hover-burst">🔎</div>
+        </div></div>
+        <!-- See All Card -->
+        <div class="pro-card-outer"><div class="pro-card glass-card pro-card-seeall scroll-section">
+          <div class="pro-card-accent"></div>
+          <div class="pro-card-icon seeall">✨</div>
+          <div class="pro-card-title">See All Tools</div>
+          <div class="pro-card-desc">Unlock more AI power<br>and hidden gems!</div>
+          <button class="pro-card-btn seeall">Explore All <span style="font-size:1.2em;">→</span></button>
+          <div class="pro-card-hover-burst">🔓</div>
+        </div></div>
+        <!-- See More Tools Card -->
+        <div class="pro-card-outer"><div class="pro-card glass-card pro-card-seeall scroll-section">
+          <div class="pro-card-accent"></div>
+          <div class="pro-card-icon seeall">🧠</div>
+          <div class="pro-card-title">See More Tools</div>
+          <div class="pro-card-desc">Discover more AI tools<br>and innovations!</div>
+          <button class="pro-card-btn seeall">View All AI Tools</button>
+          <div class="pro-card-hover-burst">🚀</div>
+        </div></div>
+      </div>
+  </section>
+  <section class="github-ai-section section-animate">
+    <div class="section-header">
+      <h1>GitHub <span>AI</span></h1>
+      <div class="section-subtitle">
+        Instantly explore any GitHub repository with AI-powered insights and analysis
+      </div>
+    </div>
+    <div class="terminal-container">
+      <!-- Terminal Card -->
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot" style="color:#4ade80;">●</span>
+            <span class="dot" style="color:#fde047;">●</span>
+            <span class="dot" style="color:#ef4444;">●</span>
+            <span style="margin-left:18px;">aruba-ai-terminal ~ github-analyzer</span>
+          </div>
+          <hr style="border:0;border-top:1px solid #29232e;margin:0 0 24px 0;">
+          <div class="terminal-title">
+            Enter GitHub Repository Name
+          </div>
+          <div class="search-container">
+            <div class="search-input-container">
+              <input type="text" placeholder="username/repository-name" class="search-input">
+              <span class="search-icon">
+                <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 2.5a8 8 0 1 1 0 16 8 8 0 0 1 0-16Zm0 14.5a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Zm5.53-2.47 3.22 3.22a1 1 0 0 1-1.42 1.42l-3.22-3.22a1 1 0 0 1 1.42-1.42Z" fill="#b983ff"></path></svg>
+              </span>
+            </div>
+            <button>Analyze Repository</button>
+          </div>
+        </div>
+      </div>
+      <!-- Features Row -->
+      <div class="features-row">
+        <!-- AI Code Analysis -->
+        <div class="github-feature-card">
+          <span class="feature-icon">🤖</span>
+          <div class="feature-title">AI Code Analysis</div>
+          <div class="feature-desc">
+            Understand code patterns, architecture, and best practices instantly
+          </div>
+        </div>
+        <!-- Smart Insights -->
+        <div class="github-feature-card">
+          <span class="feature-icon">📊</span>
+          <div class="feature-title">Smart Insights</div>
+          <div class="feature-desc">
+            Get detailed metrics, complexity analysis, and improvement suggestions
+          </div>
+        </div>
+        <!-- Instant Access -->
+        <div class="github-feature-card">
+          <span class="feature-icon" style="color:#fde047;">⚡</span>
+          <div class="feature-title">Instant Access</div>
+          <div class="feature-desc">
+            Navigate through repositories with AI-powered explanations
+          </div>
+        </div>
+      </div>
+      <div class="cta-container">
+        <div class="cta-text">
+          Experience the future of repository exploration with AI-powered insights
+        </div>
+        <button class="cta-button">
+          Start Exploring Repositories
+        </button>
+      </div>
+    </div>
+  </section>
+<h1 class="register-heading section-animate">Register</h1>
+<section class="reg-container section-animate">
+  <div class="reg-illustration">
+    <img src="Login-cuate.png" alt="Login Illustration" class="reg-anim" />
+  </div>
+  <div class="reg-form-block scroll-section">
+    <!-- Enhanced Stepper/Progress Indicator -->
+    <div class="reg-progress-indicator">
+      <div class="reg-steps-vertical professional">
+        <div class="reg-step-labels">
+          <span class="reg-step-label">Profile</span>
+          <span class="reg-step-label">Links</span>
+          <span class="reg-step-label">Resume</span>
+          <span class="reg-step-label">Certifications</span>
+          <span class="reg-step-label">Review</span>
+        </div>
+        <div class="reg-step-dots">
+          <span class="reg-step-dot active"></span>
+          <span class="reg-step-dot"></span>
+          <span class="reg-step-dot"></span>
+          <span class="reg-step-dot"></span>
+          <span class="reg-step-dot"></span>
+        </div>
+      </div>
+      <span class="reg-step-label-num">Step <span class="reg-step-num">1</span> <span class="reg-step-total">/ 5</span></span>
+    </div>
+    <!-- Success Screen (hidden by default, shown after submit) -->
+    <div class="reg-success-block" id="reg-success-block" style="display:none;">
+      <div class="reg-success-icon">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="38" stroke="#4ade80" stroke-width="4" fill="#23202b"/>
+          <path d="M24 42l12 12 20-24" stroke="#4ade80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h2 class="reg-success-title">Registration Successful!</h2>
+      <p class="reg-success-message">Welcome to the TechPath Community.<br>We're excited to help you grow and achieve your tech dreams!</p>
+      <div class="reg-success-stats">
+        <div class="reg-stat"><span class="reg-stat-num">12,500+</span> Members</div>
+        <div class="reg-stat"><span class="reg-stat-num">1.2M+</span> Coding Hours</div>
+        <div class="reg-stat"><span class="reg-stat-num">8,900+</span> Certifications Earned</div>
+      </div>
+      <button class="reg-success-btn">Go to Dashboard</button>
+    </div>
+    <h2 class="reg-welcome">Welcome to <span class="reg-uni">TechPath 2.0</span></h2>
+    <form id="reg-multistep" class="reg-form" autocomplete="off">
+      <!-- Step 1: Full Name -->
+      <div class="reg-step-block" id="reg-step-1">
+        <div class="reg-field">
+          <input type="text" id="reg-name" required placeholder=" " class="reg-input futuristic-cursor" />
+          <label for="reg-name">Full Name</label>
+        </div>
+        <button type="button" class="reg-next-btn futuristic-cursor">Next →</button>
+      </div>
+      <!-- Step 2: Profile & Coding Links -->
+      <div class="reg-step-block" id="reg-step-2" style="display:none;">
+        <div class="reg-field">
+          <input type="url" id="reg-github" placeholder=" " class="reg-input futuristic-cursor" />
+          <label for="reg-github">GitHub Profile Link</label>
+        </div>
+        <div class="reg-field">
+          <input type="url" id="reg-leetcode" placeholder=" " class="reg-input futuristic-cursor" />
+          <label for="reg-leetcode">LeetCode Profile Link</label>
+    </div>
+        <div class="reg-field">
+          <input type="url" id="reg-hackerrank" placeholder=" " class="reg-input futuristic-cursor" />
+          <label for="reg-hackerrank">HackerRank Profile Link</label>
+  </div>
+        <button type="button" class="reg-prev-btn futuristic-cursor reg-arrow-btn" aria-label="Back">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 24L10 14L18 4" stroke="#b983ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+        <button type="button" class="reg-next-btn futuristic-cursor">Next →</button>
+            </div>
+      <!-- Step 3: Resume Upload -->
+      <div class="reg-step-block" id="reg-step-3" style="display:none;">
+        <div class="reg-field file-upload">
+          <label class="reg-file-label">
+            <input type="file" accept="application/pdf" required class="reg-file-input" />
+            <span class="reg-file-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 2v12m0 0l-4-4m4 4l4-4" stroke="#18122b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="3" y="16" width="14" height="2" rx="1" fill="#18122b"/>
+              </svg>
+            </span>
+            <span class="reg-file-text">Add Resume (PDF)</span>
+          </label>
+          <span class="reg-file-name"></span>
+        </div>
+        <button type="button" class="reg-prev-btn futuristic-cursor reg-arrow-btn" aria-label="Back">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 24L10 14L18 4" stroke="#b983ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="button" class="reg-next-btn futuristic-cursor">Next →</button>
+      </div>
+      <!-- Step 4: Certifications Upload -->
+      <div class="reg-step-block" id="reg-step-4" style="display:none;">
+        <div class="reg-field file-upload">
+          <label class="reg-file-label">
+            <input type="file" accept="application/pdf,image/*" class="reg-file-input" />
+            <span class="reg-file-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 2v12m0 0l-4-4m4 4l4-4" stroke="#18122b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="3" y="16" width="14" height="2" rx="1" fill="#18122b"/>
+              </svg>
+            </span>
+            <span class="reg-file-text">Add Certificate (PDF/Image)</span>
+          </label>
+          <span class="reg-file-name"></span>
+          </div>
+        <div class="reg-field">
+          <input type="text" id="reg-cert-title" placeholder=" " class="reg-input futuristic-cursor" />
+          <label for="reg-cert-title">Certificate Title</label>
+            </div>
+        <div class="reg-field">
+          <input type="text" id="reg-cert-issuer" placeholder=" " class="reg-input futuristic-cursor" />
+          <label for="reg-cert-issuer">Issuer</label>
+            </div>
+        <div class="reg-field">
+          <input type="url" id="reg-cert-link" placeholder=" " class="reg-input futuristic-cursor" />
+          <label for="reg-cert-link">Verification Link</label>
+        </div>
+        <button type="button" class="reg-prev-btn futuristic-cursor reg-arrow-btn" aria-label="Back">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 24L10 14L18 4" stroke="#b983ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="button" class="reg-next-btn futuristic-cursor">Next →</button>
+      </div>
+      <!-- Step 5: Review & Submit -->
+      <div class="reg-step-block" id="reg-step-5" style="display:none;">
+        <div class="reg-review-block">
+          <p class="reg-review-title">Review your details and submit your registration.</p>
+          <!-- Placeholder for review summary -->
+        </div>
+        <button type="button" class="reg-prev-btn futuristic-cursor reg-arrow-btn" aria-label="Back">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 24L10 14L18 4" stroke="#b983ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="submit" class="reg-next-btn futuristic-cursor">Finish Registration</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+    <footer class="site-footer futuristic-footer">
+      <div class="footer-glass-bg"></div>
+      <div class="footer-main">
+        <div class="footer-title-gradient">TechPath 2.0</div>
+        <div class="footer-desc">Empowering students with the tools and opportunities to excel in their tech careers. Connect, learn, and grow with our vibrant community.</div>
+        <div class="footer-links-flex">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+        <div class="footer-social-icons">
+          <a href="https://twitter.com/" target="_blank" rel="noopener" title="Twitter" class="footer-social-link">
+            <svg width="28" height="28" fill="none" viewBox="0 0 28 28"><path d="M26 6.6a10.2 10.2 0 0 1-2.9.8A5.1 5.1 0 0 0 25.3 5a10.2 10.2 0 0 1-3.2 1.2A5.1 5.1 0 0 0 14 10.1c0 .4 0 .7.1 1A14.5 14.5 0 0 1 4.1 5.6a5.1 5.1 0 0 0 1.6 6.8A5 5 0 0 1 3 11.2v.1a5.1 5.1 0 0 0 4.1 5 5.1 5.1 0 0 1-2.3.1 5.1 5.1 0 0 0 4.8 3.6A10.2 10.2 0 0 1 2 23.1a14.4 14.4 0 0 0 7.8 2.3c9.4 0 14.6-7.8 14.6-14.6v-.7A10.2 10.2 0 0 0 26 6.6z" fill="#38bdf8"/></svg>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" title="LinkedIn" class="footer-social-link">
+            <svg width="28" height="28" fill="none" viewBox="0 0 28 28"><rect width="28" height="28" rx="6" fill="#b983ff"/><path d="M8.5 11.5h2v7h-2v-7zm1-3a1.25 1.25 0 1 1 0 2.5A1.25 1.25 0 0 1 9.5 8.5zm3.5 3h2v1h.03c.28-.53 1-1.08 2.07-1.08 2.22 0 2.63 1.46 2.63 3.36v3.72h-2v-3.3c0-.79-.01-1.8-1.1-1.8-1.1 0-1.27.86-1.27 1.74v3.36h-2v-7z" fill="#fff"/></svg>
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub" class="footer-social-link">
+            <svg width="28" height="28" fill="none" viewBox="0 0 28 28"><circle cx="14" cy="14" r="14" fill="#23202b"/><path d="M19.5 21v-2.2c0-.6-.2-1-.6-1.3 2-.2 4-1 4-4.3 0-.9-.3-1.6-.8-2.2.1-.2.3-.9-.1-1.8 0 0-.7-.2-2.3.8a7.7 7.7 0 0 0-4.2 0c-1.6-1-2.3-.8-2.3-.8-.4.9-.2 1.6-.1 1.8-.5.6-.8 1.3-.8 2.2 0 3.3 2 4.1 4 4.3-.2.2-.4.5-.5 1v2.2" stroke="#b983ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" title="Instagram" class="footer-social-link">
+            <svg width="28" height="28" fill="none" viewBox="0 0 28 28"><rect width="28" height="28" rx="8" fill="#f472b6"/><path d="M19.5 9.5a2 2 0 0 0-2-2h-7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2v-7zm-5.5 2.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm3.5-.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1z" stroke="#fff" stroke-width="1.2"/></svg>
+          </a>
+      </div>
+        <div class="footer-copy">© 2024 TechPath 2.0. Built with passion for student success.</div>
+        <div class="footer-copy">Built by students for students <span style="color:#f472b6;font-size:1.1em;">❤️</span></div>
+      </div>
+    </footer>
+
+  <script src="techpath.js"></script>
+  <script>
+    // Typing animation for hero title (techpath1 style)
+    const line1 = document.getElementById('line1');
+    const line2 = document.getElementById('line2');
+    const tpHighlight = document.getElementById('tp-highlight');
+    const big2 = document.getElementById('big2');
+    let l1 = 'TechPath, now';
+    let l2a = 'redesigned as ';
+    let l2b = 'TechPath';
+    let l3 = '2';
+    let i = 0, j = 0, k = 0;
+    line1.textContent = '';
+    line2.innerHTML = '';
+    tpHighlight.textContent = '';
+    big2.textContent = '';
+    function typeLines() {
+      if (i < l1.length) {
+        line1.textContent += l1[i++];
+        setTimeout(typeLines, 45);
+      } else if (j < l2a.length) {
+        line2.innerHTML += l2a[j++];
+        setTimeout(typeLines, 45);
+      } else if (k < l2b.length) {
+        tpHighlight.textContent += l2b[k++];
+        setTimeout(typeLines, 45);
+      } else if (big2.textContent.length < 1) {
+        big2.textContent = l3;
+        setTimeout(() => {
+          big2.style.borderRight = '8px solid #fff';
+          setTimeout(() => {
+            big2.style.borderRight = '8px solid transparent';
+            setTimeout(() => {
+              big2.style.borderRight = '8px solid #fff';
+              setTimeout(() => {
+                big2.style.borderRight = 'none';
+              }, 500);
+            }, 500);
+          }, 500);
+        }, 400);
+      }
+    }
+    typeLines();
+
+    // Simple scroll-triggered animations
+    function revealOnScroll() {
+      document.querySelectorAll('.section-animate').forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 80) section.classList.add('visible');
+      });
+      document.querySelectorAll('.card-animate').forEach((card, idx) => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+          setTimeout(() => card.classList.add('visible'), idx * 120 + (idx > 1 ? 200 : 0));
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+
+
+</body></html>
